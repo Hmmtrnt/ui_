@@ -1,5 +1,6 @@
 #include "SceneManager.h"
 #include <cassert>
+#include "Pad.h"
 
 SceneManager::SceneManager()
 {
@@ -12,6 +13,8 @@ SceneManager::~SceneManager()
 
 void SceneManager::init(SceneKind kind)
 {
+	Pad::update();
+
 	m_kind = kind;
 	switch (m_kind)
 	{
