@@ -112,10 +112,6 @@ void SelectMenu::Cursor::draw()
 	int posY = m_menuPos.y + kMenuItemInterval * m_selectIndex;
 
 	DrawBox(posX, posY, posX + m_size.x, posY + m_size.y, GetColor(255, 0, 0), false);
-	if (Pad::isPress(PAD_INPUT_UP))
-	{
-		DrawString(0, 0, "‚ ", GetColor(255, 255, 255));
-	}
 }
 
 // ========================================================

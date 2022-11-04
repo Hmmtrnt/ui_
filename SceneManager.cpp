@@ -13,7 +13,7 @@ SceneManager::~SceneManager()
 
 void SceneManager::init(SceneKind kind)
 {
-	Pad::update();
+	
 
 	m_kind = kind;
 	switch (m_kind)
@@ -50,6 +50,8 @@ void SceneManager::end()
 
 void SceneManager::update()
 {
+
+	Pad::update();
 	bool isEnd = false;
 	switch (m_kind)
 	{
